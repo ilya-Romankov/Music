@@ -1,0 +1,91 @@
+$theme-color: #2723CB;
+
+html ,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @include reset;
+}
+
+ul {
+  @include reset-list;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background-color: transparent
+}
+
+
+.wrapper {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.btn-main {
+  padding:  8px 26px 8px 26px;
+  border :0;
+
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+
+  background-color: #2723CB;
+  box-shadow: 0px 6px 10px rgba(39, 35, 203, 0.3);
+  border-radius: 18px;
+}
+
+.btn-play {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $theme-color;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding-bottom: 2px;
+  padding-right: 8px;
+}
+
+.wrapper-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  color: #000000;
+}
+
+.title-h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.title-h3--center {
+  text-align: center;
+}

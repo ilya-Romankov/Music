@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mucis</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic" rel="stylesheet">
+    <style media="screen">
+      .banner__wrapper {
+          height: 560px;
+          background:url("img/banner.png") no-repeat  right;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <a class="header__logo logo" href="/">
+          <svg class="logo__svg" width="51" height="25"><use xlink:href="#icon-s-MUSIC"></use></svg>
+        </a>
+        <form class="header__search search" action="index.html" method="post">
+          <input class="search__input" type="text" name="search" placeholder="Песня, исполнитель, альбом">
+          <button class="search__btn" type="submit" name="button">
+            <svg class="search__svg" width="51" height="25"><use xlink:href="#icon-s-search"></use></svg>
+          </button>
+        </form>
+        <div class="header__user-bar user-bar">
+          <a class="user-bar__link" href="#">
+            <img class="user-bar__img" src="img/user-avatar.png" alt="">
+            <span class="user-bar__name">Михаил</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="banner__wrapper wrapper">
+          <div class="banner__wrapper-content">
+            <ul class="banner__tags tags">
+              <li class="tags__item"><a href="#">Музыка из сериалов</a></li>
+              <li class="tags__item"><a href="#">Новинки</a></li>
+              <li class="tags__item"><a href="#">2019</a></li>
+            </ul>
+            <div class="banner__name">
+              <span>Labrinth - </span><span>Formula</span>
+            </div>
+            <div class="banner__place">
+              <span>euphoria</span>
+            </div>
+            <div class="banner__another">
+              <span>Саунтрек к 1-му сезону</span>
+            </div>
+            <div class="banner__function-navbar">
+              <button class="banner__btn-play btn-main" type="button" name="button">
+                <svg width="15" height="15"><use xlink:href="#icon-s-play"></use></svg>
+                <span>Слушать</span>
+              </button>
+              <button class="banner__btn-like like">
+                <svg width="18" height="17"><use xlink:href="#icon-s-like"></use></svg
+              </button>
+              <button class="banner__btn-share share">
+                <svg width="18" height="18"><use xlink:href="#icon-s-share -2"></use></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="banner__panel panel">
+          <img class="panel__img" src="img/author-mini.png" alt="">
+          <div class="panel__name">
+            <span class="panel__first-name">Labrinth</span>
+            <span class="panel__track-name">Formula</span>
+          </div>
+          <div class="panel__main">
+            <button>
+              <svg width="22" height="15"><use xlink:href="#icon-s-prev"></use></svg>
+            </button>
+            <button class="btn-play" type="button" name="button">
+              <svg width="15" stroke="#ffffff" height="15"><use xlink:href="#icon-s-play"></use></svg>
+            </button>
+            <button>
+              <svg width="22" height="15"><use xlink:href="#icon-s-next"></use></svg>
+            </button>
+          </div>
+          <div class="panel__social">
+            <button class="panel__btn-like like">
+              <svg width="18" stroke="#2723CB" height="17"><use xlink:href="#icon-s-like"></use></svg>
+            </button>
+            <button class="panel__btn-share share">
+              <svg width="18" stroke="#2723CB" height="18" ><use xlink:href="#icon-s-share"></use></svg>
+            </button>
+          </div>
+          <div class="panel__feelbar">
+            <div class="panel__time panel__time--on">
+              <span>0:</span><span>45</span>
+            </div>
+            <div class="panel__time-update">
+
+            </div>
+            <div class="panel__time panel__time--of">
+              <span>2:</span><span>45</span>
+            </div>
+          </div>
+          <div class="panel__another-bar">
+            <button class="panel__another-volume volume">
+              <svg width="20"  height="18" ><use xlink:href="#icon-s-volume "></use></svg>
+            </button>
+            <button class="panel__another-mix mix">
+              <svg width="28"  height="24" ><use xlink:href="#icon-s-mix"></use></svg>
+            </button>
+            <button class="panel__another-repeat repeat">
+              <svg width="26" height="24" ><use xlink:href="#icon-s-repeat"></use></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="top-author">
+        <div class="top-author__warpper wrapper">
+          <div class="top-author__wrapper-title wrapper-title">
+            <h2 class="title-h2">Популярные исполнители</h2>
+            <a href="" class="btn-main">
+              Смотреть все
+            </a>
+          </div>
+          <ul class="top-author__list">
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">The Weeknd</h3>
+                <img class="top-author__img" src="img/1.png" alt="">
+              </a>
+            </li>
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">The Killers </h3>
+                <img class="top-author__img" src="img/2.png" alt="">
+              </a>
+            </li>
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">Lana Del Ray</h3>
+                <img class="top-author__img" src="img/3.png" alt="">
+              </a>
+            </li>
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">Twenty One Pilots</h3>
+                <img class="top-author__img" src="img/4.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="chart">
+          <div class="chart__wrapper wrapper">
+            <div class="wrapper-title">
+              <h2 class="title-h2">Популярные исполнители</h2>
+              <a href="" class="btn-main">
+                Смотреть все
+              </a>
+            </div>
+            <ol class="chart__list">
+              <li class="chart__item">
+                <div class="chart__btn">
+                  <img class="chart__img" src="img/1-1.png" alt="">
+                </div>
+                <div class="chart__name">
+                  <span class="chart__name-track">Dance Monkey</span>
+                  <span class="chart__name-author">Tones and I</span>
+                </div>
+                <div class="chart__time">
+                  <span>3:05</span>
+                </div>
+              </li>
+              <li class="chart__item">
+                <div class="chart__btn">
+                  <img class="chart__img" src="img/1-1.png" alt="">
+                </div>
+                <div class="chart__name">
+                  <span class="chart__name-track">Dance Monkey</span>
+                  <span class="chart__name-author">Tones and I</span>
+                </div>
+                <div class="chart__time">
+                  <span>3:05</span>
+                </div>
+              </li>
+              <li class="chart__item">
+                <div class="chart__btn">
+                  <img class="chart__img" src="img/1-1.png" alt="">
+                </div>
+                <div class="chart__name">
+                  <span class="chart__name-track">Dance Monkey</span>
+                  <span class="chart__name-author">Tones and I</span>
+                </div>
+                <div class="chart__time">
+                  <span>3:05</span>
+                </div>
+              </li>
+              <li class="chart__item">
+                <div class="chart__btn">
+                  <img class="chart__img" src="img/1-1.png" alt="">
+                </div>
+                <div class="chart__name">
+                  <span class="chart__name-track">Dance Monkey</span>
+                  <span class="chart__name-author">Tones and I</span>
+                </div>
+                <div class="chart__time">
+                  <span>3:05</span>
+                </div>
+              </li>
+              <li class="chart__item">
+                <div class="chart__btn">
+                  <img class="chart__img" src="img/1-1.png" alt="">
+                </div>
+                <div class="chart__name">
+                  <span class="chart__name-track">Dance Monkey</span>
+                  <span class="chart__name-author">Tones and I</span>
+                </div>
+                <div class="chart__time">
+                  <span>3:05</span>
+                </div>
+              </li>
+              <li class="chart__item">
+                <div class="chart__btn">
+                  <img class="chart__img" src="img/1-1.png" alt="">
+                </div>
+                <div class="chart__name">
+                  <span class="chart__name-track">Dance Monkey</span>
+                  <span class="chart__name-author">Tones and I</span>
+                </div>
+                <div class="chart__time">
+                  <span>3:05</span>
+                </div>
+              </li>
+              <li class="chart__item">
+                <div class="chart__btn">
+                  <img class="chart__img" src="img/1-1.png" alt="">
+                </div>
+                <div class="chart__name">
+                  <span class="chart__name-track">Dance Monkey</span>
+                  <span class="chart__name-author">Tones and I</span>
+                </div>
+                <div class="chart__time">
+                  <span>3:05</span>
+                </div>
+              </li>
+              <li class="chart__item">
+                <div class="chart__btn">
+                  <img class="chart__img" src="img/1-1.png" alt="">
+                </div>
+                <div class="chart__name">
+                  <span class="chart__name-track">Dance Monkey</span>
+                  <span class="chart__name-author">Tones and I</span>
+                </div>
+                <div class="chart__time">
+                  <span>3:05</span>
+                </div>
+              </li>
+            </ol>
+          </div>
+      </section>
+
+      <section class="top-author">
+        <div class="top-author__warpper wrapper">
+          <div class="top-author__wrapper-title wrapper-title">
+            <h2 class="title-h2">Подборки</h2>
+            <a href="" class="btn-main">
+              Смотреть все
+            </a>
+          </div>
+          <ul class="top-author__list">
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">The Weeknd</h3>
+                <img class="top-author__img" src="img/1.png" alt="">
+              </a>
+            </li>
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">The Killers </h3>
+                <img class="top-author__img" src="img/2.png" alt="">
+              </a>
+            </li>
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">Lana Del Ray</h3>
+                <img class="top-author__img" src="img/3.png" alt="">
+              </a>
+            </li>
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">Twenty One Pilots</h3>
+                <img class="top-author__img" src="img/4.png" alt="">
+              </a>
+            </li>
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">Twenty One Pilots</h3>
+                <img class="top-author__img" src="img/4.png" alt="">
+              </a>
+            </li>
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">Twenty One Pilots</h3>
+                <img class="top-author__img" src="img/4.png" alt="">
+              </a>
+            </li>
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">Twenty One Pilots</h3>
+                <img class="top-author__img" src="img/4.png" alt="">
+              </a>
+            </li>
+            <li class="top-author__item">
+              <a class="top-author__link" href="#">
+                <h3 class="title-h3 title-h3--center">Twenty One Pilots</h3>
+                <img class="top-author__img" src="img/4.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="news__wrapper wrapper">
+          <div class="news__wrapper-title wrapper-title">
+            <h2 class="title-h2">Новости музыки</h2>
+            <a href="" class="btn-main">
+              Смотреть все
+            </a>
+          </div>
+
+          <ul class="news__list">
+            <li class="news__item">
+              <a class="news__link">
+                  <img class="news__img" src="img/news-1.png" width="216" height="150" alt="">
+
+                <div class="news__content">
+                  <h3 class="title-h3">Громкие новинки месяца</h3>
+                  <p class="news__descroption">
+                    Первые десять треков в плейлисте выбрали Little Big
+                  </p>
+                </div>
+
+                <div class="news__functional">
+                  <button class="btn-main">
+                    <svg width="15"  height="15"><use xlink:href="#icon-s-play"></use></svg>
+                    <span>Слушать</span>
+                  </button>
+                  <button class="like">
+                    <svg width="18" stroke="#2723CB" height="17"><use xlink:href="#icon-s-like"></use></svg>
+                  </button>
+                  <button class=" share">
+                    <svg width="18" stroke="#2723CB" height="18"><use xlink:href="#icon-s-share"></use></svg>
+                  </button>
+                </div>
+              </a>
+            </li>
+            <li class="news__item">
+              <a class="news__link">
+                  <img class="news__img" src="img/news-1.png" width="216" height="150" alt="">
+
+                <div class="news__content">
+                  <h3 class="title-h3">Громкие новинки месяца</h3>
+                  <p class="news__descroption">
+                    Первые десять треков в плейлисте выбрали Little Big
+                  </p>
+                </div>
+
+                <div class="news__functional">
+                  <button class="btn-main">
+                    <svg width="15"  height="15"><use xlink:href="#icon-s-play"></use></svg>
+                    <span>Слушать</span>
+                  </button>
+                  <button class="like">
+                    <svg width="18" stroke="#2723CB" height="17"><use xlink:href="#icon-s-like"></use></svg>
+                  </button>
+                  <button class=" share">
+                    <svg width="18" stroke="#2723CB" height="18"><use xlink:href="#icon-s-share"></use></svg>
+                  </button>
+                </div>
+              </a>
+            </li>
+            <li class="news__item">
+              <a class="news__link">
+                  <img class="news__img" src="img/news-1.png" width="216" height="150" alt="">
+
+                <div class="news__content">
+                  <h3 class="title-h3">Громкие новинки месяца</h3>
+                  <p class="news__descroption">
+                    Первые десять треков в плейлисте выбрали Little Big
+                  </p>
+                </div>
+
+                <div class="news__functional">
+                  <button class="btn-main">
+                    <svg width="15"  height="15"><use xlink:href="#icon-s-play"></use></svg>
+                    <span>Слушать</span>
+                  </button>
+                  <button class="like">
+                    <svg width="18" stroke="#2723CB" height="17"><use xlink:href="#icon-s-like"></use></svg>
+                  </button>
+                  <button class=" share">
+                    <svg width="18" stroke="#2723CB" height="18"><use xlink:href="#icon-s-share"></use></svg>
+                  </button>
+                </div>
+              </a>
+            </li>
+            <li class="news__item">
+              <a class="news__link">
+                  <img class="news__img" src="img/news-1.png" width="216" height="150" alt="">
+
+                <div class="news__content">
+                  <h3 class="title-h3">Громкие новинки месяца</h3>
+                  <p class="news__descroption">
+                    Первые десять треков в плейлисте выбрали Little Big
+                  </p>
+                </div>
+
+                <div class="news__functional">
+                  <button class="btn-main">
+                    <svg width="15"  height="15"><use xlink:href="#icon-s-play"></use></svg>
+                    <span>Слушать</span>
+                  </button>
+                  <button class="like">
+                    <svg width="18" stroke="#2723CB" height="17"><use xlink:href="#icon-s-like"></use></svg>
+                  </button>
+                  <button class=" share">
+                    <svg width="18" stroke="#2723CB" height="18"><use xlink:href="#icon-s-share"></use></svg>
+                  </button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

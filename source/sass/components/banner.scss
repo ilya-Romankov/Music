@@ -1,0 +1,67 @@
+.banner {
+  margin-top: 24px;
+}
+
+.banner__wrapper {
+  border: 1px solid transparent;
+}
+
+.banner__wrapper-content {
+  width: 400px;
+  margin-left: 584px;
+  margin-top: 40px;
+}
+
+.banner__tags  {
+  width: 300px;
+}
+
+.banner__name {
+  margin-top: 67px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.banner__place {
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 136px;
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+.banner__another {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #888EC0;
+  text-align: right;
+}
+
+.banner__function-navbar {
+  display: flex;
+  align-items: center;
+  margin-top: 59px;
+}
+
+.banner__btn-play {
+  display: flex;
+  align-items: baseline;
+  margin-right: 15px;
+}
+
+.banner__btn-play span {
+  margin-left: 10px;
+}
+
+.banner__btn-like {
+  margin-right: 30px;
+}
+
+.banner__panel {
+  width: 1366px;
+  margin: 0 auto;
+}
