@@ -76,3 +76,40 @@
   line-height: 18px;
   color: #828282;
 }
+
+.chart__btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .btn-play {
+    position: absolute;
+    z-index: 10;
+    transition: all .5 ease;
+    transition-delay: .3;
+    opacity: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(39, 35, 203, 0.95), rgba(39, 35, 203, 0.95));
+    opacity: 0;
+    transition: all .3 ease;
+  }
+}
+
+.chart__btn:hover {
+  
+  .btn-play {
+    opacity: 1;
+  }
+
+  &::after {
+    opacity: .5;
+  }
+}

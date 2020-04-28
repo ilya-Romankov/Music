@@ -58,3 +58,14 @@
   align-items: center;
   justify-content: space-between;
 }
+
+
+.news__functional-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    margin-left: 5px;
+  }
+}

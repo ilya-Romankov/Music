@@ -3,13 +3,15 @@
 }
 
 .banner__wrapper {
-  border: 1px solid transparent;
+  width: 100%;
+  padding-top: 40px;
+
 }
 
 .banner__wrapper-content {
   width: 400px;
-  margin-left: 584px;
-  margin-top: 40px;
+  margin: 0 auto;
+
 }
 
 .banner__tags  {
@@ -49,7 +51,7 @@
 
 .banner__btn-play {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-right: 15px;
 }
 

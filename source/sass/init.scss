@@ -5,6 +5,7 @@ html ,body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 
   font-family: 'Open Sans', sans-serif;
 }
@@ -41,11 +42,11 @@ button {
 }
 
 .btn-main {
-  padding:  8px 26px 8px 26px;
+  padding:  10px 26px 10px 26px;
   border :0;
 
   font-size: 14px;
-  line-height: 19px;
+  line-height: 14px;
   color: #FFFFFF;
 
   background-color: #2723CB;
@@ -60,8 +61,8 @@ button {
   align-items: center;
   background-color: $theme-color;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 37px;
+  height: 37px;
   padding-bottom: 2px;
   padding-right: 8px;
 }
